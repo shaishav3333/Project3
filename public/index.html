@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Javascript</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="styles.css">
+		<script src="script.js"></script>
+	</head>
+	<body>
+	<div class="container main-border">
+	<div class="col-xs-12 header">
+		<div class="form-group col-sm-8 col-xs-6">
+			<label class="pull-left col-xs-12 col-sm-3">Select Sort Type:</label>
+			<div class="col-sm-6 col-xs-12">
+				<div class="row">
+			<select class="form-control " onchange="changeSortOrder()" id="mySelect">
+				<option value="asc">Ascending Order</option>
+				<option value="dsc">Decending Order</option>
+			</select>
+					</div>
+			</div>
+		</div>
+		<div class="form-group col-sm-4 col-xs-6">
+			<label class="pull-left col-xs-12 col-sm-3">Search</label>
+
+			<div class="col-sm-8 col-xs-12"><div class="row"><input  class="form-control " type="text" onkeyup="searchSelData()" id="searchText"/></div></div>
+		</div>
+	</div>
+		<div id="demo"></div>
+		</div>
+	</body>
+</html>
